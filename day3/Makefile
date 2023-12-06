@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-I.
-DEPS = regex.h
-OBJ = day3.o
+CFLAGS=-I. -g
+DEPS = hashtable.h
+OBJ = day3.o hashtable.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
